@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content='index,follow' name='robots'/>
+<meta content='Dev Nararan Yadav' name='author'/>
+<meta content='all' name='robots'/>
+<meta content='en' name='language'/>
+<meta content='IN' name='country'/>
+<meta content='D.El.Ed Hub:: D.EL.ED notes and question papers  ' property='og:title'/>
+<meta content='Looking for notes and question papers of D.El.Ed. or intarested in this course. Get all notes in Pdf format, all previous year question papers and new practice papers. Start your Training todat with Teachertrainer.' name='Keywords'/>
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Looking for notes and question papers of D.El.Ed. or intarested in this course. Get all notes in Pdf format, all previous year question papers and new practice papers. Start your Training todat with Teachertrainer.">
+
+  <title>D.El.Ed Hub: D.EL.ED notes and question papers.</title>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="shortcut icon" href="icons/icon.webp" type="image/x-icon">
+  <link rel="apple-touch-icon" href="icon.webp">
+
+
+
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-XN6RJJZZT0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XN6RJJZZT0');
+</script> -->
+
+
+<meta name='bulletprofit' content='Ahybm8S0XR7oMaChA11u'/>
+
+</head>
+
+<body>
+<nav id="hemu">
+    <div id="logo">
+
+
+        <img id="mnicon" src="/icons/menu_black_24dp.svg" alt="" onclick="notvisi()" />
+        <a href="/index.html">
+            <h1>D.El.Ed Hub</h1>
+        </a>
+    </div>
+    <div id="menug">
+        <ul id="ul" class="notvisi">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="http://teacherstrainer.rf.gd/">
+                <li>Updates</li>
+            </a>
+            <a href="http://teacherstrainer.rf.gd/">
+                <li>Test Papers</li>
+            </a>
+
+        </ul>
+    </div>
+</nav>
+
+<!--Top div -->
+
+<div id="smain">
+        
+    </div>
+
+
+
+
+
+
+
+  
+  
+  
+<!-- \third div -->
+
+
+
+
+
+<div id="footer">
+  <div class="elem">
+    <h4>D.El.Ed Hub</h4>
+    <p>D.El.Ed Hub is an Website that shares notes relating to various Teachers Training courses. We also try to find other things like question papers and syllabus that are not available easily. </p>
+  </div>
+  <div class="elem">
+    <h4>Deals</h4>
+    <a href="#" rel="nofollow" ><p>Smartphones</p></a>
+    <a href="#" rel="nofollow" ><P>Air Conditioners</P></a>
+    <a href="#" rel="nofollow" ><P>Refrigerators</P></a>
+    <a href="#" rel="nofollow" ><p>Kitchen Appliances</p></a>
+  </div>
+  <div class="elem">
+    <h4> Follow and contact</h4>
+    
+    <a href="https://m.facebook.com/Low0ncost/"><p>Facebook</p></a>
+    <a href="#"><p>Privacy</p></a>
+    <!-- <a href=""><p>Instagram</p></a> -->
+  </div>
+  <div class="elem">
+    <h4>More Deals</h4>
+    <a href="https://www.toptechbuzz.xyz"><p>TopTechBuzz</p></a>
+  </div>
+</div>
+
+
+  <!-- Project -->
+  <script>
+function notvisi() {
+
+let btn = document.getElementById('ul');
+btn.classList.toggle('notvisi')
+
+}
+
+</script>
+
+
+</body>
+</html>
+<script>
+    fetch("data.json")
+        .then((responce) =>
+            responce.json())
+        .then((data => {
+            //console.log(data)
+
+            let nobj = Object.keys(data.id1)
+            console.log(nobj[1]);
+
+            let smain = document.getElementById('smain');
+            for (let i = 0; i < nobj.length; i++) {
+                let nnobj = nobj[i]
+                let h1 = document.createElement("h1");
+                let main = document.createElement('div');
+
+
+                main.setAttribute('class', 'main');
+                h1.setAttribute('class', 'headt')
+                h1.innerText = nnobj;
+                
+
+                smain.appendChild(h1);
+                smain.appendChild(main);
+
+                let lgtinner = Object.keys(data.id1[nnobj])
+                //console.log(lgtinner.length)
+                for (let j = 0; j < lgtinner.length; j++) {
+                    let valinner = lgtinner[j]
+                    let a = document.createElement('a');
+                    let child= document.createElement('div');
+                    let fimg= document.createElement('div')
+                    let img=document.createElement('img');
+                    let title=document.createElement('h2');
+                     
+
+
+                    let nlink=data.id1[nnobj][valinner].title
+
+                    let c= nlink.split(" ").join('_');
+                    child.setAttribute('class','child')
+                    fimg.setAttribute('class','fiximg')
+                    a.setAttribute('href','semester.html?title='+ c)
+                    a.setAttribute('title', c);
+                    img.setAttribute('alt', c);
+                    img.setAttribute('src',data.id1[nnobj][valinner].img)
+                    title.innerText= data.id1[nnobj][valinner].title
+                    // console.log(data.id1[nnobj][valinner].img)
+
+
+                    
+                    fimg.appendChild(img)
+                    child.appendChild(fimg)
+                    child.appendChild(title)
+                    a.appendChild(child)
+                    main.appendChild(a)
+
+                }
+            }
+        }));
+</script>

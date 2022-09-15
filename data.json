@@ -1,0 +1,209 @@
+{
+    "id1":
+        
+        {
+            "D.EL.ED Semester Wise Notes":
+            [
+            {
+                "title":"First Sem Notes",
+                "prc":"All Papers",
+                "img":"images/notes.png"
+            },
+            {
+                "title":"Second Sem Notes",
+                "prc":"All Papers",
+                "img":"images/notes.png"
+            },
+            {
+                "title":"Third Sem Notes",
+                "prc":"All Papers",
+                "img":"images/notes.png"
+            },
+            {
+                "title":"Fourth Sem Notes",
+                "prc":"All Papers",
+                "img":"images/notes.png"
+            }
+            ],
+            
+            
+        
+        
+            "D.EL.ED Syllabus":
+            [
+            {
+                "title":"First Sem Syllabus",
+                "prc":"",
+                "img":"images/sy.png"
+            },
+            {
+                "title":"Second Sem Syllabus",
+                "prc":"",
+                "img":"images/sy.png"
+            },
+            {
+                "title":"Third Sem Syllabus",
+                "prc":"",
+                "img":"images/sy.png"
+            },
+            {
+                "title":"Fourth Sem Syllabus",
+                "prc":"",
+                "img":"images/sy.png"
+            }
+            ]
+            
+            
+        
+        
+            
+            
+        },
+        "First Sem Notes":
+        {
+            "First Semester Notes":
+            [
+            {
+                "title":"Childhood Child Protection and Development of Children",
+                "prc":"Paper 1-1",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Early Childhood Care and Education",
+                "prc":"Paper 1-2",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Understanding Language and Early Language Development",
+                "prc":"Paper 1-3",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Proficiency in English-I",
+                "prc":"Paper 1-5",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Padegogy of Mathematics-I",
+                "prc":"Paper 1-6",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Art and creative Education",
+                "prc":"Paper 1-7",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Yoga Education",
+                "prc":"Paper 1-8",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Work Education",
+                "prc":"Paper 1-9",
+                "img":"/images/notes.png"
+            }
+            ]
+        },
+        "Second Sem Notes":
+        {
+            "Second Semester Notes":
+            [
+            {
+                "title":"Education in Contemporary Indian Sociaty with special referance to Assam",
+                "prc":"Paper 2-1",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Understanding Society, education and Curriculum",
+                "prc":"Paper 2-2",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Padegogy of Environmental Studies",
+                "prc":"Paper 2-3",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Padegogy of MIL",
+                "prc":"Paper 2-4",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Proficiency in English-II",
+                "prc":"Paper 2-5",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"ICT Integreted Pedagogy-I",
+                "prc":"Paper 2-6",
+                "img":"/images/notes.png"
+            }
+            ]
+        
+        },
+        "Third Sem Notes":
+        {
+            "Third Semester Notes":
+            [
+            {
+                "title":"Cognition Learning and social-Cultural context",
+                "prc":"Paper 3-1",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Padegogy of Mathematics-II",
+                "prc":"Paper 3-2",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Padegogy of MIL-II",
+                "prc":"Paper 3-3",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Padegogy of English",
+                "prc":"Paper 3-4",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Art and Creative Education-II",
+                "prc":"Paper 3-5",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Childrens Physical and Emotional Helth Education",
+                "prc":"Paper 3-6",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"ICT Integreted Pedagogy-II",
+                "prc":"Paper 3-7",
+                "img":"/images/notes.png"
+            }
+            ]
+        
+        },
+        "Fourth Sem Notes":
+        {
+            "Fourth Semester Notes":
+            [
+            {
+                "title":"School Culture, Leadership and Teacher Development",
+                "prc":" Paper 4-1",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Diversity, Gender and Inclusive Education",
+                "prc":"Paper 4-2",
+                "img":"/images/notes.png"
+            },
+            {
+                "title":"Optional Pedagogy Courses of Class 6-8",
+                "prc":"Paper 4-3",
+                "img":"/images/notes.png"
+            }
+            ]
+        
+        }
+}

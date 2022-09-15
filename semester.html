@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta content='index,follow' name='robots' />
+  <meta content='Dev Nararan Yadav' name='author' />
+  <meta content='all' name='robots' />
+  <meta content='en' name='language' />
+  <meta content='IN' name='country' />
+  <meta content='TeachersTrainer :: D.EL.ED notes and question papers  ' property='og:title' />
+  <meta
+    content='Looking for notes and question papers of D.El.Ed. or intarested in this course. Get all notes in Pdf format, all previous year question papers and new practice papers. Start your Training todat with Teachertrainer.'
+    name='Keywords' />
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="List of subjets and there unit wise notes.">
+
+  <title>Tearchers Traine: D.EL.ED notes and question papers.</title>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="/css/style1.css">
+  <link rel="shortcut icon" href="/icons/icon.webp" type="image/x-icon">
+  <link rel="apple-touch-icon" href="icons/icon.webp">
+
+
+
+
+
+
+  <meta name='bulletprofit' content='Ahybm8S0XR7oMaChA11u' />
+
+</head>
+
+<body>
+
+
+  <nav id="hemu">
+    <div id="logo">
+
+
+      <img id="mnicon" src="/icons/menu_black_24dp.svg" alt="" onclick="notvisi()" />
+      <a href="/index.html">
+        <h1>D.El.Ed Hub</h1>
+      </a>
+    </div>
+    <div id="menug">
+      <ul id="ul" class="notvisi">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="http://teacherstrainer.rf.gd/">
+          <li>Updates</li>
+        </a>
+        <a href="http://teacherstrainer.rf.gd/">
+          <li>Test Papers</li>
+        </a>
+
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <!-- top wear women second div -->
+
+
+  <div id="smain">
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- \third div -->
+
+
+
+  <!-- Bulletprofit - Ad Display Code -->
+  <!-- <div id="adm-container-97653"></div><script data-cfasync="false" async type="text/javascript" src="//bulletprofitads.com/display/items.php?97653&14940&970&90&4&0&42"></script> -->
+  <!-- Bulletprofit - Ad Display Code -->
+
+  <div id="footer">
+    <div class="elem">
+      <h4>Teachers Trainer</h4>
+      <p>Teachers Trainer is an Website that shares notes relating to various Teachers Training courses. We also try to
+        find other things like question papers and syllabus that are not available easily. </p>
+    </div>
+    <div class="elem">
+      <h4>Deals</h4>
+      <a href="#" rel="nofollow">
+        <p>Smartphones</p>
+      </a>
+      <a href="#" rel="nofollow">
+        <P>Air Conditioners</P>
+      </a>
+      <a href="#" rel="nofollow">
+        <P>Refrigerators</P>
+      </a>
+      <a href="#" rel="nofollow">
+        <p>Kitchen Appliances</p>
+      </a>
+    </div>
+    <div class="elem">
+      <h4> Follow and contact</h4>
+
+      <a href="https://m.facebook.com/Low0ncost/">
+        <p>Facebook</p>
+      </a>
+      <a href="#">
+        <p>Privacy</p>
+      </a>
+      <!-- <a href=""><p>Instagram</p></a> -->
+    </div>
+    <div class="elem">
+      <h4>More Deals</h4>
+      <a href="https://lowoncost.xyz">
+        <p>LowonCost</p>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Project -->
+  <script>
+    function notvisi() {
+
+      let btn = document.getElementById('ul');
+      btn.classList.toggle('notvisi')
+
+    }
+
+  </script>
+
+
+</body>
+
+</html>
+
+
+
+<script>
+  fetch("data.json")
+    .then((responce) =>
+      responce.json())
+    .then((data => {
+      console.log(data)
+
+      let url = new URLSearchParams(window.location.search);
+      let title = url.get('title');
+      let c = title.split("_").join(" ");
+      console.log(c)
+      let smain = document.getElementById("smain");
+      let main = document.createElement("div");
+
+
+      let head = Object.keys(data[c])
+      let h1 = document.createElement('h1');
+      main.setAttribute("class", "main")
+      h1.innerText = head;
+
+      h1.setAttribute('class', 'headt')
+      smain.appendChild(h1);
+      smain.appendChild(main);
+
+      let gmain = document.getElementsByClassName('main')
+      console.log(gmain);
+      let lngth = data[c][head].length
+      for (let i = 0; i < lngth; i++) {
+        let a = document.createElement('a');
+        let child = document.createElement('div')
+        let fimg = document.createElement('div')
+
+        let img = document.createElement('img')
+        let h2 = document.createElement("h2");
+        let h3 = document.createElement('h3');
+
+
+        a.setAttribute('href', '' + c)
+        a.setAttribute('title', c)
+        child.setAttribute('class', 'child')
+        fimg.setAttribute('class', 'fiximg')
+        img.setAttribute('src', data[c][head][i].img)
+
+        h2.innerText = data[c][head][i].title;
+        h3.innerText = data[c][head][i].prc;
+
+        //console.log(gmain);
+        fimg.appendChild(img)
+        child.appendChild(fimg)
+
+        child.appendChild(h2);
+        child.appendChild(h3);
+        a.appendChild(child);
+        main.appendChild(a);
+      }
+    }));
+
+</script>
