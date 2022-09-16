@@ -7,7 +7,7 @@
   <meta content='all' name='robots' />
   <meta content='en' name='language' />
   <meta content='IN' name='country' />
-  <meta content='TeachersTrainer :: D.EL.ED notes and question papers  ' property='og:title' />
+  <meta content='TeacherHub :: D.EL.ED notes and question papers  ' property='og:title' />
   <meta
     content='Looking for notes and question papers of D.El.Ed. or intarested in this course. Get all notes in Pdf format, all previous year question papers and new practice papers. Start your Training todat with Teachertrainer.'
     name='Keywords' />
@@ -18,10 +18,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="List of subjets and there unit wise notes.">
 
-  <title>Tearchers Traine: D.EL.ED notes and question papers.</title>
+  <title>TearcherHub: D.EL.ED notes and question papers.</title>
   <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/style1.css">
-  <link rel="shortcut icon" href="/icons/icon.webp" type="image/x-icon">
+  <link rel="shortcut icon" href="icons/icon.webp" type="image/x-icon">
   <link rel="apple-touch-icon" href="icons/icon.webp">
 
 
@@ -40,9 +40,9 @@
     <div id="logo">
 
 
-      <img id="mnicon" src="/icons/menu_black_24dp.svg" alt="" onclick="notvisi()" />
-      <a href="/index.html">
-        <h1>D.El.Ed Hub</h1>
+      <img id="mnicon" src="icons/menu_black_24dp.svg" alt="" onclick="notvisi()" />
+      <a href="index.html">
+        <h1>TeacherHub</h1>
       </a>
     </div>
     <div id="menug">
@@ -95,8 +95,8 @@
 
   <div id="footer">
     <div class="elem">
-      <h4>Teachers Trainer</h4>
-      <p>Teachers Trainer is an Website that shares notes relating to various Teachers Training courses. We also try to
+      <h4>TeacherHub</h4>
+      <p>TeacherHub is an Website that shares notes relating to various Teachers Training courses. We also try to
         find other things like question papers and syllabus that are not available easily. </p>
     </div>
     <div class="elem">
@@ -165,7 +165,7 @@
       console.log(c)
       let smain = document.getElementById("smain");
       let main = document.createElement("div");
-      
+
 
       let head = Object.keys(data[c])
       let h1 = document.createElement('h1');
@@ -189,6 +189,7 @@
         let h3 = document.createElement('h3');
         let p = document.createElement('p');
 
+
         a.setAttribute('href', '' + c)
         a.setAttribute('title', c)
         child.setAttribute('class', 'child')
@@ -198,9 +199,10 @@
         h2.innerText = data[c][head][i].title;
         h3.innerText = data[c][head][i].prc;
         p.innerText = 'View or Download';
+
         //console.log(gmain);
-        fimg.appendChild(img)
-        child.appendChild(fimg)
+        fimg.appendChild(img);
+        child.appendChild(fimg);
 
         child.appendChild(h2);
         child.appendChild(h3);
