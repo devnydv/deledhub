@@ -165,7 +165,7 @@
       console.log(c)
       let smain = document.getElementById("smain");
       let main = document.createElement("div");
-
+      
 
       let head = Object.keys(data[c])
       let h1 = document.createElement('h1');
@@ -187,7 +187,7 @@
         let img = document.createElement('img')
         let h2 = document.createElement("h2");
         let h3 = document.createElement('h3');
-
+        let p = document.createElement('p');
 
         a.setAttribute('href', '' + c)
         a.setAttribute('title', c)
@@ -197,13 +197,14 @@
 
         h2.innerText = data[c][head][i].title;
         h3.innerText = data[c][head][i].prc;
-
+        p.innerText = 'View or Download';
         //console.log(gmain);
         fimg.appendChild(img)
         child.appendChild(fimg)
 
         child.appendChild(h2);
         child.appendChild(h3);
+        child.appendChild(p);
         a.appendChild(child);
         main.appendChild(a);
       }
