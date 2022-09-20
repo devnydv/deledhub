@@ -191,9 +191,10 @@
 
 
         a.setAttribute('href', data[c][head][i].url)
-        a.setAttribute('title', c)
-        child.setAttribute('class', 'child')
-        fimg.setAttribute('class', 'fiximg')
+        a.setAttribute('title', c);
+        a.setAttribute('target', "_blank");
+        child.setAttribute('class', 'child');
+        fimg.setAttribute('class', 'fiximg');
         img.setAttribute('src', data[c][head][i].img)
 
         h2.innerText = data[c][head][i].title;
